@@ -1065,7 +1065,7 @@ a   { text-decoration: none; color: inherit; }
   width:46px;
   height:46px;
   object-fit:contain;
-  display:block;
+  display:block;   
   flex-shrink:0;
 }
 
