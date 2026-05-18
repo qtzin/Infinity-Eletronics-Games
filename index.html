@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Infinity Electronics & Games – Consoles, acessórios e assistência técnica especializada em São José dos Campos."/>
+  <title>Infinity Electronics & Games | SJC</title>
+
+  <!-- Fonts: Barlow Condensed (display pesado) + Outfit (corpo clean) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="icon" href="assent/infinity_logo_transparente.png"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     LOADING SCREEN
+═══════════════════════════════════════════════ -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <!-- Logo SVG inline (infinito + gamepad) -->
+    <div class="loader-logo">
+      <img src="assent/infinity_logo_transparente.png" alt="Infinity Logo" class="infinity-logo">
+    </div>
+    <div class="loader-name">INFINITY</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     HEADER
+═══════════════════════════════════════════════ -->
+<header class="header" id="header">
+  <div class="hd-container">
+
+    <a class="brand" href="#">
+
+  <img 
+    src="assent/infinity_logo_transparente.png"
+    alt="Infinity"
+    class="brand-logo"
+  >
+
+  <div class="brand-text">
+    <span class="brand-main">INFINITY</span>
+    <span class="brand-sub">ELECTRONICS & GAMES</span>
+  </div>
+
+</a>
+
+    <!-- NAV DESKTOP -->
+    <nav class="nav-desk" id="navDesk">
+      <a href="#inicio"      class="nlink">Início</a>
+      <a href="#produtos"    class="nlink">Produtos</a>
+      <a href="#assistencia" class="nlink">Assistência</a>
+      <a href="#unidades"    class="nlink">Unidades</a>
+      <a href="#contato"     class="nlink">Contato</a>
+    </nav>
+
+    <div class="hd-actions">
+      <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Infinity%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" class="btn-wpp-hd">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE DRAWER -->
+  <nav class="mob-nav" id="mobNav">
+    <a href="#inicio"      class="mob-link">Início</a>
+    <a href="#produtos"    class="mob-link">Produtos</a>
+    <a href="#assistencia" class="mob-link">Assistência</a>
+    <a href="#unidades"    class="mob-link">Unidades</a>
+    <a href="#contato"     class="mob-link">Contato</a>
+    <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Infinity." target="_blank" class="mob-wpp">
+      <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+    </a>
+  </nav>
+</header>
+
+
+<!-- ═══════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════ -->
+<section class="hero" id="inicio">
+  <!-- Fundo dinâmico -->
+  <div class="hero-bg">
+    <div class="hbg-grid"></div>
+    <div class="hbg-glow g1"></div>
+    <div class="hbg-glow g2"></div>
+    <div class="hbg-glow g3"></div>
+  </div>
+
+  <div class="hero-wrap">
+
+    <!-- ESQUERDO: texto -->
+    <div class="hero-left" data-reveal>
+      <div class="hero-eyebrow">
+        <span class="hey-dot"></span>
+        <span>São José dos Campos · SP</span>
+      </div>
+
+      <h1 class="hero-h1">
+        TECNOLOGIA,<br/>
+        <span class="h1-grad">GAMES</span> E<br/>
+        ASSISTÊNCIA<br/>
+        EM UM SÓ LUGAR.
+      </h1>
+
+      <p class="hero-p">
+        Consoles, acessórios, manutenção especializada e tudo para elevar sua experiência gamer ao próximo nível.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#produtos" class="btn-primary">
+          <i class="fas fa-gamepad"></i> Ver Catálogo
+        </a>
+        <a href="#assistencia" class="btn-ghost">
+          <i class="fas fa-tools"></i> Assistência Técnica
+        </a>
+      </div>
+
+      <!-- Mini stats -->
+      <div class="hero-stats">
+        <div class="hstat">
+          <span class="hstat-n">+11k</span>
+          <span class="hstat-l">seguidores</span>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <span class="hstat-n">Ref.</span>
+          <span class="hstat-l">loja em SJC</span>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <span class="hstat-n">5★</span>
+          <span class="hstat-l">avaliações</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIREITO: visual -->
+    <div class="hero-right" data-reveal data-reveal-delay="200">
+      <!-- Card principal com imagem de setup gamer -->
+      <div class="hero-img-card">
+        <img
+          src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=700&q=85"
+          alt="Setup gamer premium"
+          class="hero-img"
+        />
+        <div class="hic-overlay"></div>
+
+        <!-- Badge flutuante: loja -->
+        <div class="hbadge hbadge-store">
+          <i class="fas fa-store"></i>
+          <div>
+            <strong>Loja Referência</strong>
+            <span>em São José dos Campos</span>
+          </div>
+        </div>
+
+        <!-- Badge flutuante: avaliação -->
+        <div class="hbadge hbadge-rating">
+          <div class="hbr-stars">★★★★★</div>
+          <div class="hbr-text">Atendimento top!</div>
+          <div class="hbr-author">— Gabriel T.</div>
+        </div>
+      </div>
+
+      <!-- Mini cards laterais -->
+      <div class="hero-mini-cards">
+        <div class="hmc">
+          <div class="hmc-icon"><i class="fas fa-gamepad"></i></div>
+          <div class="hmc-info">
+            <strong>Consoles</strong>
+            <span>PS5, Xbox, Switch</span>
+          </div>
+        </div>
+        <div class="hmc">
+          <div class="hmc-icon hmc-icon-purple"><i class="fas fa-wrench"></i></div>
+          <div class="hmc-info">
+            <strong>Assistência</strong>
+            <span>Especializada</span>
+          </div>
+        </div>
+        <div class="hmc">
+          <div class="hmc-icon hmc-icon-pink"><i class="fas fa-truck"></i></div>
+          <div class="hmc-info">
+            <strong>Entrega</strong>
+            <span>SJC e região</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /hero-wrap -->
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     STRIP SCROLL (marquee de marcas)
+═══════════════════════════════════════════════ -->
+<div class="brand-strip">
+  <div class="bs-track">
+    <span>PlayStation</span><span class="bs-dot">✦</span>
+    <span>Xbox</span><span class="bs-dot">✦</span>
+    <span>Nintendo</span><span class="bs-dot">✦</span>
+    <span>Samsung</span><span class="bs-dot">✦</span>
+    <span>Apple</span><span class="bs-dot">✦</span>
+    <span>Razer</span><span class="bs-dot">✦</span>
+    <span>HyperX</span><span class="bs-dot">✦</span>
+    <span>JBL</span><span class="bs-dot">✦</span>
+    <span>Logitech</span><span class="bs-dot">✦</span>
+    <span>Corsair</span><span class="bs-dot">✦</span>
+    <!-- repete para loop contínuo -->
+    <span>PlayStation</span><span class="bs-dot">✦</span>
+    <span>Xbox</span><span class="bs-dot">✦</span>
+    <span>Nintendo</span><span class="bs-dot">✦</span>
+    <span>Samsung</span><span class="bs-dot">✦</span>
+    <span>Apple</span><span class="bs-dot">✦</span>
+    <span>Razer</span><span class="bs-dot">✦</span>
+    <span>HyperX</span><span class="bs-dot">✦</span>
+    <span>JBL</span><span class="bs-dot">✦</span>
+    <span>Logitech</span><span class="bs-dot">✦</span>
+    <span>Corsair</span><span class="bs-dot">✦</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     CATÁLOGO / PRODUTOS
+═══════════════════════════════════════════════ -->
+<section class="section cat-section" id="produtos">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="sh-tag">🎮 Catálogo</div>
+      <h2 class="sec-title">Produtos em <span class="t-grad">Destaque</span></h2>
+      <p class="sec-sub">Os melhores consoles e acessórios com os melhores preços.</p>
+    </div>
+
+    <!-- FILTROS -->
+    <div class="cat-filters" data-reveal>
+      <button class="cf-btn cf-active" data-cat="all">Todos</button>
+      <button class="cf-btn" data-cat="console">Consoles</button>
+      <button class="cf-btn" data-cat="acessorio">Acessórios</button>
+      <button class="cf-btn" data-cat="jogo">Jogos</button>
+    </div>
+
+    <div class="cat-grid" id="catGrid">
+
+      <!-- PS5 -->
+      <article class="pcard" data-cat="console" data-reveal>
+        <div class="pc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1607016284318-d1384bf9e09d?w=480&q=80" alt="PlayStation 5"/>
+          <span class="pc-badge pc-badge-hot">🔥 Top Venda</span>
+          <div class="pc-overlay"></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat-tag">Console</div>
+          <h3 class="pc-name">PlayStation 5</h3>
+          <p class="pc-desc">Console Sony com SSD ultrarrápido e DualSense</p>
+          <div class="pc-price-row">
+            <div>
+              <s class="pc-old">R$ 4.799</s>
+              <div class="pc-price">R$ 4.299</div>
+            </div>
+            <div class="pc-installment">12x R$ 358,25</div>
+          </div>
+          <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20PlayStation%205%20%E2%80%93%20R%24%204.299" target="_blank" class="pc-btn">
+            <i class="fab fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </article>
+
+      <!-- XBOX SERIES X -->
+      <article class="pcard" data-cat="console" data-reveal>
+        <div class="pc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=480&q=80" alt="Xbox Series X"/>
+          <span class="pc-badge">Disponível</span>
+          <div class="pc-overlay"></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat-tag">Console</div>
+          <h3 class="pc-name">Xbox Series X</h3>
+          <p class="pc-desc">O Xbox mais potente. 4K, 120fps e Game Pass</p>
+          <div class="pc-price-row">
+            <div>
+              <s class="pc-old">R$ 4.299</s>
+              <div class="pc-price">R$ 3.899</div>
+            </div>
+            <div class="pc-installment">12x R$ 324,92</div>
+          </div>
+          <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Xbox%20Series%20X%20%E2%80%93%20R%24%203.899" target="_blank" class="pc-btn">
+            <i class="fab fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </article>
+
+      <!-- NINTENDO SWITCH -->
+      <article class="pcard" data-cat="console" data-reveal>
+        <div class="pc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?w=480&q=80" alt="Nintendo Switch"/>
+          <span class="pc-badge pc-badge-new">Novo</span>
+          <div class="pc-overlay"></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat-tag">Console</div>
+          <h3 class="pc-name">Nintendo Switch OLED</h3>
+          <p class="pc-desc">Console portátil com tela OLED vibrante de 7"</p>
+          <div class="pc-price-row">
+            <div>
+              <s class="pc-old">R$ 2.799</s>
+              <div class="pc-price">R$ 2.499</div>
+            </div>
+            <div class="pc-installment">12x R$ 208,25</div>
+          </div>
+          <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Nintendo%20Switch%20OLED%20%E2%80%93%20R%24%202.499" target="_blank" class="pc-btn">
+            <i class="fab fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </article>
+
+      <!-- HEADSET -->
+      <article class="pcard" data-cat="acessorio" data-reveal>
+        <div class="pc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1599669454699-248893623440?w=480&q=80" alt="Headset Gamer"/>
+          <span class="pc-badge pc-badge-off">-25%</span>
+          <div class="pc-overlay"></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat-tag">Acessório</div>
+          <h3 class="pc-name">Headset HyperX Cloud</h3>
+          <p class="pc-desc">Som surround 7.1, microfone profissional removível</p>
+          <div class="pc-price-row">
+            <div>
+              <s class="pc-old">R$ 399</s>
+              <div class="pc-price">R$ 299</div>
+            </div>
+            <div class="pc-installment">12x R$ 24,92</div>
+          </div>
+          <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Headset%20HyperX%20%E2%80%93%20R%24%20299" target="_blank" class="pc-btn">
+            <i class="fab fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </article>
+
+      <!-- CONTROLE PS5 -->
+      <article class="pcard" data-cat="acessorio" data-reveal>
+        <div class="pc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1617096200347-cb04ae810b1d?w=480&q=80" alt="DualSense PS5"/>
+          <span class="pc-badge">Disponível</span>
+          <div class="pc-overlay"></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat-tag">Acessório</div>
+          <h3 class="pc-name">DualSense PS5</h3>
+          <p class="pc-desc">Controle haptic feedback e gatilhos adaptativos</p>
+          <div class="pc-price-row">
+            <div>
+              <s class="pc-old">R$ 399</s>
+              <div class="pc-price">R$ 349</div>
+            </div>
+            <div class="pc-installment">12x R$ 29,08</div>
+          </div>
+          <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20DualSense%20PS5%20%E2%80%93%20R%24%20349" target="_blank" class="pc-btn">
+            <i class="fab fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </article>
+
+      <!-- MONITOR GAMER -->
+      <article class="pcard" data-cat="acessorio" data-reveal>
+        <div class="pc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1527443224154-c4a573d05dc6?w=480&q=80" alt="Monitor Gamer"/>
+          <span class="pc-badge pc-badge-hot">⚡ Oferta</span>
+          <div class="pc-overlay"></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat-tag">Monitor</div>
+          <h3 class="pc-name">Monitor Gamer 144Hz</h3>
+          <p class="pc-desc">Full HD 27" IPS, 144Hz, 1ms, AMD FreeSync</p>
+          <div class="pc-price-row">
+            <div>
+              <s class="pc-old">R$ 1.899</s>
+              <div class="pc-price">R$ 1.599</div>
+            </div>
+            <div class="pc-installment">12x R$ 133,25</div>
+          </div>
+          <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Monitor%20Gamer%20144Hz%20%E2%80%93%20R%24%201.599" target="_blank" class="pc-btn">
+            <i class="fab fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </article>
+
+      <!-- CADEIRA GAMER -->
+      <article class="pcard" data-cat="acessorio" data-reveal>
+        <div class="pc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=480&q=80" alt="Cadeira Gamer"/>
+          <span class="pc-badge pc-badge-new">Novo</span>
+          <div class="pc-overlay"></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat-tag">Acessório</div>
+          <h3 class="pc-name">Cadeira Gamer Pro</h3>
+          <p class="pc-desc">Ergonômica, reclinável 180°, almofada lombar</p>
+          <div class="pc-price-row">
+            <div>
+              <s class="pc-old">R$ 1.299</s>
+              <div class="pc-price">R$ 999</div>
+            </div>
+            <div class="pc-installment">12x R$ 83,25</div>
+          </div>
+          <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20Cadeira%20Gamer%20Pro%20%E2%80%93%20R%24%20999" target="_blank" class="pc-btn">
+            <i class="fab fa-whatsapp"></i> Comprar
+          </a>
+        </div>
+      </article>
+
+      <!-- JOGO GOD OF WAR -->
+      <article class="pcard" data-cat="jogo" data-reveal>
+        <div class="pc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=480&q=80" alt="Jogos"/>
+          <span class="pc-badge pc-badge-off">-30%</span>
+          <div class="pc-overlay"></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat-tag">Jogo</div>
+          <h3 class="pc-name">Jogos PS5 / Xbox</h3>
+          <p class="pc-desc">Títulos nacionais e importados lacrados</p>
+          <div class="pc-price-row">
+            <div>
+              <s class="pc-old">R$ 349</s>
+              <div class="pc-price">A partir R$ 149</div>
+            </div>
+            <div class="pc-installment">Consulte disponibilidade</div>
+          </div>
+          <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Quero%20ver%20os%20jogos%20dispon%C3%ADveis." target="_blank" class="pc-btn">
+            <i class="fab fa-whatsapp"></i> Consultar
+          </a>
+        </div>
+      </article>
+
+    </div><!-- /cat-grid -->
+
+    <div class="cat-cta" data-reveal>
+      <p>Não encontrou o que procura?</p>
+      <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20ver%20mais%20produtos." target="_blank" class="btn-primary">
+        <i class="fab fa-whatsapp"></i> Ver Catálogo Completo
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     ASSISTÊNCIA TÉCNICA
+═══════════════════════════════════════════════ -->
+<section class="section assist-section" id="assistencia">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="sh-tag">🔧 Suporte</div>
+      <h2 class="sec-title">Assistência Técnica <span class="t-grad">Especializada</span></h2>
+      <p class="sec-sub">Diagnóstico rápido, reparo profissional e garantia no serviço.</p>
+    </div>
+
+    <div class="assist-grid">
+
+      <div class="acard" data-reveal>
+        <div class="acard-icon aicon-purple">
+          <i class="fab fa-playstation"></i>
+        </div>
+        <h3 class="acard-title">Manutenção PS5</h3>
+        <p class="acard-desc">Limpeza, troca de pasta térmica, reparo de HDMI, problemas de leitura e joystick.</p>
+        <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Preciso%20de%20assist%C3%AAncia%20para%20meu%20PS5." target="_blank" class="acard-btn">Solicitar</a>
+      </div>
+
+      <div class="acard" data-reveal>
+        <div class="acard-icon aicon-blue">
+          <i class="fab fa-xbox"></i>
+        </div>
+        <h3 class="acard-title">Manutenção Xbox</h3>
+        <p class="acard-desc">Diagnóstico completo, reparo de placas, limpeza e atualização de firmware.</p>
+        <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Preciso%20de%20assist%C3%AAncia%20para%20meu%20Xbox." target="_blank" class="acard-btn">Solicitar</a>
+      </div>
+
+      <div class="acard" data-reveal>
+        <div class="acard-icon aicon-green">
+          <i class="fas fa-laptop"></i>
+        </div>
+        <h3 class="acard-title">Notebook / PC</h3>
+        <p class="acard-desc">Formatação, upgrade de memória e SSD, troca de tela e reparo de placa-mãe.</p>
+        <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Preciso%20de%20assist%C3%AAncia%20para%20notebook%2FPC." target="_blank" class="acard-btn">Solicitar</a>
+      </div>
+
+      <div class="acard" data-reveal>
+        <div class="acard-icon aicon-pink">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3 class="acard-title">Celular</h3>
+        <p class="acard-desc">Troca de tela, bateria, câmera, reparo de placa e microfone.</p>
+        <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Preciso%20de%20assist%C3%AAncia%20para%20meu%20celular." target="_blank" class="acard-btn">Solicitar</a>
+      </div>
+
+      <div class="acard" data-reveal>
+        <div class="acard-icon aicon-yellow">
+          <i class="fas fa-fan"></i>
+        </div>
+        <h3 class="acard-title">Limpeza Gamer</h3>
+        <p class="acard-desc">Limpeza ultrassônica de consoles e PCs. Ideal para superaquecimento e ruído.</p>
+        <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Preciso%20de%20limpeza%20do%20meu%20console%2FPC." target="_blank" class="acard-btn">Solicitar</a>
+      </div>
+
+      <div class="acard" data-reveal>
+        <div class="acard-icon aicon-orange">
+          <i class="fas fa-microchip"></i>
+        </div>
+        <h3 class="acard-title">Upgrades</h3>
+        <p class="acard-desc">Instalação de SSD, expansão de RAM, troca de GPU e cooling upgrade.</p>
+        <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20upgrade%20no%20meu%20equipamento." target="_blank" class="acard-btn">Solicitar</a>
+      </div>
+
+    </div>
+
+    <!-- CTA assistência -->
+    <div class="assist-cta" data-reveal>
+      <div class="acta-content">
+        <div class="acta-icon"><i class="fas fa-headset"></i></div>
+        <div>
+          <h3>Diagnóstico gratuito</h3>
+          <p>Traga seu equipamento ou mande uma mensagem. Avaliamos sem compromisso!</p>
+        </div>
+      </div>
+      <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20diagn%C3%B3stico%20gratuito." target="_blank" class="btn-primary">
+        <i class="fab fa-whatsapp"></i> Solicitar Diagnóstico
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     UNIDADES
+═══════════════════════════════════════════════ -->
+<section class="section units-section" id="unidades">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="sh-tag">📍 Lojas</div>
+      <h2 class="sec-title">Nossas <span class="t-grad">Unidades</span></h2>
+      <p class="sec-sub">Duas unidades para atender você melhor em São José dos Campos.</p>
+    </div>
+
+    <div class="units-grid">
+
+      <!-- Unidade Parque -->
+      <div class="unit-card" data-reveal>
+        <div class="uc-top">
+          <div class="uc-badge">Unidade Parque</div>
+          <div class="uc-status">
+            <span class="uc-dot"></span> Aberta agora
+          </div>
+        </div>
+        <div class="uc-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666!2d-45.8872!3d-23.1996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDExJzU4LjYiUyA0NcKwNTMnMTMuOSJX!5e0!3m2!1spt-BR!2sbr!4v1"
+            width="100%" height="200"
+            style="border:0;" allowfullscreen="" loading="lazy"
+            title="Infinity – Unidade Parque">
+          </iframe>
+        </div>
+        <div class="uc-infos">
+          <div class="uc-info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Parque Residencial Aquarius<br/>São José dos Campos – SP</span>
+          </div>
+          <div class="uc-info-item">
+            <i class="fas fa-clock"></i>
+            <span>Seg–Sex: 09h às 19h<br/>Sáb: 09h às 17h</span>
+          </div>
+          <div class="uc-info-item">
+            <i class="fab fa-whatsapp"></i>
+            <span>(12) 9 9999-9999</span>
+          </div>
+        </div>
+        <div class="uc-btns">
+          <a href="https://www.google.com/maps/search/?api=1&query=Infinity+Electronics+Games+São+José+dos+Campos" target="_blank" class="btn-ghost uc-map-btn">
+            <i class="fas fa-route"></i> Ver Rota
+          </a>
+          <a href="https://wa.me/5512999999999" target="_blank" class="btn-primary uc-wpp-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Unidade Aquarius -->
+      <div class="unit-card" data-reveal>
+        <div class="uc-top">
+          <div class="uc-badge uc-badge-2">Unidade Aquarius</div>
+          <div class="uc-status">
+            <span class="uc-dot"></span> Aberta agora
+          </div>
+        </div>
+        <div class="uc-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666!2d-45.9050!3d-23.2100!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEyJzM2LjAiUyA0NcKwNTQnMTguMCJX!5e0!3m2!1spt-BR!2sbr!4v1"
+            width="100%" height="200"
+            style="border:0;" allowfullscreen="" loading="lazy"
+            title="Infinity – Unidade Aquarius">
+          </iframe>
+        </div>
+        <div class="uc-infos">
+          <div class="uc-info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Parque Aquarius<br/>São José dos Campos – SP</span>
+          </div>
+          <div class="uc-info-item">
+            <i class="fas fa-clock"></i>
+            <span>Seg–Sex: 09h às 19h<br/>Sáb: 09h às 17h</span>
+          </div>
+          <div class="uc-info-item">
+            <i class="fab fa-whatsapp"></i>
+            <span>(12) 9 9999-8888</span>
+          </div>
+        </div>
+        <div class="uc-btns">
+          <a href="https://www.google.com/maps/search/?api=1&query=Infinity+Electronics+Games+Aquarius+São+José+dos+Campos" target="_blank" class="btn-ghost uc-map-btn">
+            <i class="fas fa-route"></i> Ver Rota
+          </a>
+          <a href="https://wa.me/5512999999998" target="_blank" class="btn-primary uc-wpp-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     AVALIAÇÕES
+═══════════════════════════════════════════════ -->
+<section class="section rev-section">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="sh-tag">⭐ Reviews</div>
+      <h2 class="sec-title">O que nossos <span class="t-grad">clientes</span> dizem</h2>
+    </div>
+
+    <!-- Score geral -->
+    <div class="rev-score" data-reveal>
+      <div class="rs-big">5,0</div>
+      <div class="rs-info">
+        <div class="rs-stars">★★★★★</div>
+        <div class="rs-label">Média no Google</div>
+      </div>
+      <div class="rs-count">+200 avaliações verificadas</div>
+    </div>
+
+    <div class="rev-grid">
+
+      <div class="rcard" data-reveal>
+        <div class="rc-top">
+          <div class="rc-av rc-av1">G</div>
+          <div class="rc-meta">
+            <strong>Gabriel Torres</strong>
+            <div class="rc-stars">★★★★★</div>
+          </div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" class="rc-glogo" alt="Google"/>
+        </div>
+        <p class="rc-text">"Melhor loja gamer de SJC! Comprei meu PS5 aqui, preço justo e atendimento impecável. Chegou no prazo e embalado perfeitamente."</p>
+        <div class="rc-date">há 1 semana</div>
+      </div>
+
+      <div class="rcard" data-reveal>
+        <div class="rc-top">
+          <div class="rc-av rc-av2">M</div>
+          <div class="rc-meta">
+            <strong>Matheus Oliveira</strong>
+            <div class="rc-stars">★★★★★</div>
+          </div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" class="rc-glogo" alt="Google"/>
+        </div>
+        <p class="rc-text">"Trouxe meu PS5 com problema no HDMI, resolveram em 2 dias e com garantia. Profissionais de verdade, super recomendo!"</p>
+        <div class="rc-date">há 2 semanas</div>
+      </div>
+
+      <div class="rcard" data-reveal>
+        <div class="rc-top">
+          <div class="rc-av rc-av3">L</div>
+          <div class="rc-meta">
+            <strong>Lucas Mendes</strong>
+            <div class="rc-stars">★★★★★</div>
+          </div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" class="rc-glogo" alt="Google"/>
+        </div>
+        <p class="rc-text">"Loja referência! Variedade incrível de produtos, preços competitivos e equipe que entende de games de verdade."</p>
+        <div class="rc-date">há 3 semanas</div>
+      </div>
+
+      <div class="rcard" data-reveal>
+        <div class="rc-top">
+          <div class="rc-av rc-av4">A</div>
+          <div class="rc-meta">
+            <strong>Ana Beatriz R.</strong>
+            <div class="rc-stars">★★★★★</div>
+          </div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" class="rc-glogo" alt="Google"/>
+        </div>
+        <p class="rc-text">"Comprei um Nintendo Switch de presente para o meu irmão. Atendimento via WhatsApp super rápido e entrega no mesmo dia!"</p>
+        <div class="rc-date">há 1 mês</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     INSTAGRAM / SOCIAL
+═══════════════════════════════════════════════ -->
+<section class="section insta-section">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="sh-tag">📸 Social</div>
+      <h2 class="sec-title">Siga no <span class="t-grad">Instagram</span></h2>
+      <p class="sec-sub">@infinitygames.sjc · +11 mil seguidores</p>
+    </div>
+
+    <div class="insta-grid" data-reveal>
+      <a href="https://instagram.com" target="_blank" class="ig-cell">
+        <img src="https://images.unsplash.com/photo-1592840496694-26d035b52b48?w=300&q=70" alt=""/>
+        <div class="ig-ov"><i class="fab fa-instagram"></i></div>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="ig-cell">
+        <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=300&q=70" alt=""/>
+        <div class="ig-ov"><i class="fab fa-instagram"></i></div>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="ig-cell">
+        <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=300&q=70" alt=""/>
+        <div class="ig-ov"><i class="fab fa-instagram"></i></div>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="ig-cell">
+        <img src="https://images.unsplash.com/photo-1617096200347-cb04ae810b1d?w=300&q=70" alt=""/>
+        <div class="ig-ov"><i class="fab fa-instagram"></i></div>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="ig-cell">
+        <img src="https://images.unsplash.com/photo-1599669454699-248893623440?w=300&q=70" alt=""/>
+        <div class="ig-ov"><i class="fab fa-instagram"></i></div>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="ig-cell">
+        <img src="https://images.unsplash.com/photo-1657664072762-2a491ec40e49?w=300&q=70" alt=""/>
+        <div class="ig-ov"><i class="fab fa-instagram"></i></div>
+      </a>
+    </div>
+
+    <div class="insta-cta" data-reveal>
+      <a href="https://instagram.com" target="_blank" class="btn-insta">
+        <i class="fab fa-instagram"></i> Seguir @infinitygames.sjc
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     CONTATO / CTA FINAL
+═══════════════════════════════════════════════ -->
+<section class="section contact-section" id="contato">
+  <div class="wrap">
+    <div class="contact-box" data-reveal>
+      <!-- Fundo com glow -->
+      <div class="cb-glow"></div>
+      <div class="cb-content">
+        <div class="cb-logo">
+          <img src="assent/infinity_logo_transparente.png" alt="Infinity Electronics & Games" class="cta-logo">
+        </div>
+        <h2>Pronto para elevar<br/>seu setup?</h2>
+        <p>Fale com a equipe Infinity agora mesmo pelo WhatsApp. Atendemos você rápido!</p>
+
+        <div class="contact-links">
+          <a href="https://wa.me/5512999999999" target="_blank" class="clink clink-wpp">
+            <i class="fab fa-whatsapp"></i>
+            <div><strong>WhatsApp</strong><span>(12) 9 9999-9999</span></div>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="clink clink-ig">
+            <i class="fab fa-instagram"></i>
+            <div><strong>Instagram</strong><span>@infinitygames.sjc</span></div>
+          </a>
+          <a href="https://tiktok.com" target="_blank" class="clink clink-tk">
+            <i class="fab fa-tiktok"></i>
+            <div><strong>TikTok</strong><span>@infinitygames</span></div>
+          </a>
+        </div>
+
+        <a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Infinity%20Electronics%20%26%20Games%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" class="btn-primary btn-xl">
+          <i class="fab fa-whatsapp"></i> Falar Agora no WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════
+     RODAPÉ
+═══════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="wrap ft-inner">
+
+      <div class="ft-brand">
+        <a href="#" class="brand ft-logo-brand">
+          <div class="brand-logo-wrap brand-logo-sm">
+            <img src="assent/infinity_logo_transparente.png" alt="Infinity Electronics & Games" class="footer-logo-img">
+          </div>
+          <div class="brand-text">
+            <span class="brand-main" style="font-size:1rem">INFINITY</span>
+            <span class="brand-sub" style="font-size:.6rem">ELECTRONICS & GAMES</span>
+          </div>
+        </a>
+        <p class="ft-tagline">A loja referência em games e eletrônicos de São José dos Campos.</p>
+        <div class="ft-socials">
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/5512999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="ft-col">
+        <h4>Produtos</h4>
+        <a href="#produtos">PlayStation 5</a>
+        <a href="#produtos">Xbox Series X</a>
+        <a href="#produtos">Nintendo Switch</a>
+        <a href="#produtos">Headsets</a>
+        <a href="#produtos">Monitores</a>
+      </div>
+
+      <div class="ft-col">
+        <h4>Serviços</h4>
+        <a href="#assistencia">Manutenção PS5</a>
+        <a href="#assistencia">Manutenção Xbox</a>
+        <a href="#assistencia">Notebook / PC</a>
+        <a href="#assistencia">Celular</a>
+        <a href="#assistencia">Upgrades</a>
+      </div>
+
+      <div class="ft-col">
+        <h4>Contato</h4>
+        <a href="https://wa.me/5512999999999" target="_blank"><i class="fab fa-whatsapp" style="margin-right:.4rem"></i> (12) 9 9999-9999</a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram" style="margin-right:.4rem"></i> @infinitygames.sjc</a>
+        <p style="color:#6b7280;font-size:.82rem;margin-top:.5rem;line-height:1.6">São José dos Campos – SP<br/>Unidade Parque · Unidade Aquarius</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer-bot">
+    <div class="wrap fb-inner">
+      <span>© 2025 Infinity Electronics & Games · Todos os direitos reservados.</span>
+      <span>São José dos Campos – SP</span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/5512999999999?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Infinity%20Electronics%20%26%20Games%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" class="wf" id="wf" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span class="wf-ring"></span>
+  <span class="wf-tip">Fale conosco!</span>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
